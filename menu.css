@@ -1,0 +1,36 @@
+.main-menu {
+	padding: 0 20px;
+}
+
+.main-menu > .menu-item {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.menu-item {
+	position: relative;
+	padding: 10px 5px;
+	white-space: nowrap;
+	color: white;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: white;
+}
+
+.sub-menu {
+	display: none;
+	position: absolute;
+	top: 38px;
+	padding: 0;
+	background-color: #555555;
+}
+
+.sub-menu .menu-item {
+	border-top: 1px solid #E5E5E5;
+}
+
+.main-menu .menu-item:hover .sub-menu {
+	display: block;
+}
