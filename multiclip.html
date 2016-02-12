@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Megadragon | Multiclip</title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="Megadragon, Мегадракон, Царь драконов, PhoenixLab, Phoenix Lab, GitHub,
+			2048, 2048 for Windows, 2048 для Windows, Multiclip, Tanki Online, Танки Online, Танки Онлайн,
+			AlternativaPlatform, Alternativa Platform, WormSlayer" />
+		<meta name="description" content="Официальный сайт Megadragon'а – профессионального разработчика программного обеспечения из Украины" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/main.css" />
+		<link rel="stylesheet" href="/menu.css" />
+	</head>
+	<body>
+		<header class="page-header">
+			<nav class="main-menu-wrapper">
+				<ul class="main-menu">
+					<li class="menu-item">
+						<a href="/">Главная</a>
+					</li>
+					<li class="menu-item">
+						<a href="/bio.html">Биография</a>
+					</li>
+					<li class="menu-item">
+						<span>Портфолио</span>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="/2048.html">2048 для Windows</a>
+							</li>
+							<li class="menu-item">
+								<a href="/multiclip.html">Multiclip</a>
+							</li>
+							<li class="menu-item">
+								<a href="/to-launcher.html">Tanki Online Launcher</a>
+							</li>
+							<li class="menu-item">
+								<a href="/wormslayer.html">Истребитель червей</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a href="/about.html">Обо мне</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<aside class="sidebar">
+			<span>Баннеры</span>
+		</aside>
+		<main>
+			<article>
+				<header>
+					<h1>Multiclip</h1>
+					<nav>
+						<ol>
+							<li><a href="#features">Особенности</a></li>
+							<li><a href="#mes-edit">Редактирование сообщений</a>
+								<ol>
+									<li><a href="#hotkeys">Горячие клавиши</a></li>
+								</ol>
+							</li>
+							<li><a href="#parameters">Значения параметров в файле Multiclip.ini</a></li>
+							<li><a href="#command-line">Параметры запуска из командной строки</a></li>
+							<li><a href="#others">Прочее</a></li>
+							<li><a href="#license">Лицензирование</a></li>
+							<li><a href="#team">Разработчики</a>
+								<ol>
+									<li><a href="#author">Автор идеи</a></li>
+									<li><a href="#developer">Разработчик</a></li>
+								</ol>
+							</li>
+						</ol>
+					</nav>
+				</header>
+				<p><strong>Multiclip</strong> – мультишаблон для боевого чата <a href="http://tankionline.com/ru/">Танков Онлайн</a>.
+					Текущая версия 3.2.1.57 от <a href="https://ru.wikipedia.org/wiki/26_июня">26 июня</a> <a href="https://ru.wikipedia.org/wiki/2015_год">2015 года</a>.
+				</p>
+				<p>Целью программы является облегчение ввода сообщений путём выбора готовых ответов.</p>
+				<h2><a name="features">Особенности</a></h2>
+				<ul>
+					<li>При запуске маячит в правой части экрана (по умолчанию, можно перетащить в другое место).</li>
+					<li>При наведении мыши показывает список сообщений.</li>
+					<li>При выборе сообщения из списка нажатием мышкой вставляет его в чат.</li>
+					<li>После любого действия снова прячется (становится полупрозрачным и узким).</li>
+				</ul>
+				<h2><a name="mes-edit">Редактирование сообщений</a></h2>
+				<p>Список шаблонов можно редактировать в файле <a href="https://github.com/Megadragon/PhoenixLab/blob/master/MultiClip_TO%20v3/command.lst">command.lst</a><br/>
+					Формат строки: <code>[%]Текст[<Табуляция>Горячая_клавиша]</code><br/>
+					Если текст начинается с символа «%», то при вводе в чат он не будет отправлен и будет доступен для редактирования.
+				</p>
+				<h3><a name="hotkeys">Горячие клавиши</a></h3>
+				<p>Для каждого шаблона после табуляции можно указывать горячую клавишу в формате: <code>[Ctrl+][Shift+][Alt+]Клавиша</code>,
+					например, <code>Ctrl+F1</code>,<code>Alt+L</code>, <code>F10</code>.<br/>
+					Можно указывать комбинации с <code>Ctrl</code>, <code>Shift</code>, <code>Alt</code>, но вставятся в чат они после того,
+					как вы отпустите клавишу-модификатор (<code>Ctrl</code>, <code>Alt</code>, <code>Shift</code>).<br/>
+				</p>
+				<p>Если горячая клавиша правильно указана, то она показывается в списке вариантов.
+					Если она выделена красным цветом, то значит, не удалось её назначить (например, комбинация уже занята другим приложением).
+				</p>
+				<h2><a name="parameters">Значения параметров в файле <a href="https://github.com/Megadragon/PhoenixLab/blob/master/MultiClip_TO%20v3/Multiclip.ini">Multiclip.ini</a></a></h2>
+				<p>Секция <code>[Settings]</code> содержит такие параметры:</p>
+				<dl>
+					<dt><code>Left</code> и <code>Top</code></dt>
+					<dd>Позиция окна по горизонтали и вертикали соответственно.</dd>
+					<dt><code>WidthMin</code> и <code>WidthMax</code></dt>
+					<dd>Ширина окна в сжатом и активном состоянии.</dd>
+					<dt><code>AlphaBlendValue</code></dt>
+					<dd>Прозрачность прячущегося окна; допустимые значения от 0 до 255.</dd>
+					<dt><code>DelayBeforeMinimize</code></dt>
+					<dd>Время показа окна до исчезновения в миллисекундах, если отвести мышь.</dd>
+					<dt><code>FontSize</code> и <code>HKFontSize</code></dt>
+					<dd>Размер шрифта команд и горячих клавиш.</dd>
+					<dt><code>WindowPosition</code></dt>
+					<dd>Выравнивание окна; может принимать значения <code>Left</code>, <code>Right</code>, <code>Manual</code>.
+						При выравнивании <code>Left</code> и <code>Right</code> автоматически пристыковывается к краю экрана,
+						<code>Manual</code> – остаётся в выбранном месте.
+					</dd>
+					<dt><code>TargetWindowName</code></dt>
+					<dd>Имя окна танков. Если указано, то <strong>Multiclip</strong> срабатывает только для этого окна, иначе срабатывает для последнего активного окна.</dd>
+				</dl>
+				<p>В этом же файле, но в другой его секции под названием <code>[Colors]</code>, можно задавать цветовые параметры:</p>
+				<dl>
+					<dt><code>List</code></dt>
+					<dd>Цвет фона списка команд.</dd>
+					<dt><code>Selected</code></dt>
+					<dd>Цвет фона выделенной команды.</dd>
+					<dt><code>Text</code></dt>
+					<dd>Цвет текста команд.</dd>
+					<dt><code>HotKey</code></dt>
+					<dd>Цвет текста горячих клавиш.</dd>
+					<dt><code>Separator</code></dt>
+					<dd>Цвет разделителя между группами команд.</dd>
+				</dl>
+				<p>Цвета задаются или текстовыми константами вида <code>clWhite</code>, <code>clBlack</code>,
+					или в <a href="https://ru.wikipedia.org/wiki/RGB">RGB</a>, например <code>$02FF8800</code>.
+				</p>
+				<h2><a name="command-line">Параметры запуска из командной строки</a></h2>
+				<dl>
+					<dt><code>/settings</code></dt>
+					<dd>Режим визуального редактирование файла настроек.</dd>
+					<dt><code>/commands</code></dt>
+					<dd>Режим визуального редактирования списка команд.</dd>
+				</dl>
+				<h2><a name="others">Прочее</a></h2>
+				<p>Нежелательно использовать для горячих клавиш цифры, особенно <code>1-2-3-4-5</code>, а также прочие клавиши управления танком или камерой.</p>
+				<h2><a name="license">Лицензирование</a></h2>
+				<p>Данное приложение распространяется под лицензией <a href="http://www.gnu.org/licenses/gpl-3.0.ru.html">GNU GPL v3</a>.</p>
+				<p>Будем рады услышать предложения по улучшению.</p>
+				<h2><a name="team">Разработчики</a></h2>
+				<h3><a name="author">Автор идеи</a></h3>
+				<p>
+					Антон Николаев<br/>
+					E-mail: <a href="mailto:antynik@yandex.ru">Antynik@yandex.ru</a><br/>
+					Ник в танчиках: <a href="http://ratings.tankionline.com/ru/user/test12/">test12</a>
+				</p>
+				<h3><a name="developer">Разработчик</a></h3>
+				<p>
+					Megadragon<br/>
+					E-mail: <a href="mailto:ssglobov@gmail.com">ssglobov@gmail.com</a><br/>
+					Позывной: <a href="http://ratings.tankionline.com/ru/user/SS_Alpha-1/">SS_Alpha-1</a>
+				</p>
+			</article>
+		</main>
+		<footer class="page-footer">
+			<div class="social-block">
+				<a href="http://vk.com/id21154054"><img src="/img/vkontakte.png" alt="[В]Контакте" title="Я [В]Контакте" /></a>
+				<a href="http://youtube.com/channel/UCdcwan4zeMoif_K0kEV-4mw"><img src="/img/youtube.png" alt="YouTube" title="Мой канал на YouTube" /></a>
+				<a href="https://github.com/megadragon"><img src="/img/github.png" alt="GitHub" title="Моя страница на GitHub" /></a>
+				<a href="skype:megadragon16"><img src="/img/skype.png" alt="Skype" title="Мой Skype-номер" /></a>
+			</div>
+			<p class="copyright">&copy; Megadragon, 2016. Все права защищены</p>
+			<p class="nickname-sertified">
+				<a href="http://nick-name.ru/nickname/megadragon/">
+					<img src="http://nick-name.ru/img.php?nick=Megadragon&sert=2" alt="Никнейм Megadragon зарегистрирован!" border="0" />
+				</a>
+			</p>
+		</footer>
+	</body>
+</html>

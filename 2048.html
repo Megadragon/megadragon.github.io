@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Megadragon | 2048 для Windows</title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="Megadragon, Мегадракон, Царь драконов, PhoenixLab, Phoenix Lab, GitHub,
+			2048, 2048 for Windows, 2048 для Windows, Multiclip, Tanki Online, Танки Online, Танки Онлайн,
+			AlternativaPlatform, Alternativa Platform, WormSlayer" />
+		<meta name="description" content="Официальный сайт Megadragon'а – профессионального разработчика программного обеспечения из Украины" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/main.css" />
+		<link rel="stylesheet" href="/menu.css" />
+	</head>
+	<body>
+		<header class="page-header">
+			<nav class="main-menu-wrapper">
+				<ul class="main-menu">
+					<li class="menu-item">
+						<a href="/">Главная</a>
+					</li>
+					<li class="menu-item">
+						<a href="/bio.html">Биография</a>
+					</li>
+					<li class="menu-item">
+						<span>Портфолио</span>
+						<ul class="sub-menu">
+							<li class="menu-item">
+								<a href="/2048.html">2048 для Windows</a>
+							</li>
+							<li class="menu-item">
+								<a href="/multiclip.html">Multiclip</a>
+							</li>
+							<li class="menu-item">
+								<a href="/to-launcher.html">Tanki Online Launcher</a>
+							</li>
+							<li class="menu-item">
+								<a href="/wormslayer.html">Истребитель червей</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a href="/about.html">Обо мне</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<aside class="sidebar">
+			<span>Баннеры</span>
+		</aside>
+		<main>
+			<article>
+				<header>
+					<h1>2048 для Windows</h1>
+					<nav>
+						<ol>
+							<li><a href="#features">Особенности</a></li>
+							<li><a href="#install">Установка</a></li>
+							<li><a href="#plans">Планы разработки</a></li>
+							<li><a href="#license">Лицензирование</a></li>
+						</ol>
+					</nav>
+				</header>
+				<p>Данная игра является портом (портированной версией) на Windows <a href="http://gabrielecirulli.github.io/2048/">одноимённой игры</a>
+					итальянского программиста Габриэля Чирулли, в свою очередь написанной на языке JavaScript. Кстати, прототип моей игры является клоном игры
+					<a href="https://play.google.com/store/apps/details?id=com.veewo.a1024">1024</a>, основанным на другом <a href="http://saming.fr/p/2048/">клоне</a>
+					этой же игры. Вот такая забавная штука!
+				</p>
+				<h2><a name="features">Особенности</a></h2>
+				<p>Итак, какие же особенности моей версии знаменитой игры? А вот какие:</p>
+				<ul>
+					<li>Графический интерфейс, напоминающий стандартные игры Windows: Косынка, Паук и прочие.</li>
+					<li>Просмотр локальной статистики игроков, позаимствованный из Пинбола.</li>
+					<li>Поддержка нескольких игровых режимов и скинов:
+						<ul>
+							<li>Помимо классического режима есть другой, упрощённый. Главное его отличие состоит в том, что, например, последовательность плиток
+								16-8-8 схлопывается в одну плитку номиналом 32 за один ход.
+							</li>
+							<li>Поддержка скинов реализована с помощью наборов изображений в формате <code>.bmp</code>, находящихся каждый в своей подпапке внутри
+								папки с игрой, и поименованых согласно номиналом плиток, например <code>2.bmp</code>, <code>4.bmp</code> и т.д.
+							</li>
+						</ul>
+					</li>
+					<li>Поддержка различных размеров игрового поля и целевых ячеек.</li>
+				</ul>
+				<h2><a name="install">Установка</a></h2>
+				<p>Для установки игры необходимо скачать с <a href="https://github.com/Megadragon/PhoenixLab/tree/master/2048">репозитория на ГитХабе</a> и поместить
+					в отдельную папку следующие файлы:
+				</p>
+				<dl>
+					<dt>Game2048.exe</dt>
+					<dd>Единственный и главный исполняемый файл игры.</dd>
+					<dt>Players.dat</dt>
+					<dd>Файл статистики проведённых игр.</dd>
+					<dt>Settings.ini</dt>
+					<dd>Файл настроек игры.</dd>
+					<dt>Папка Standard вместе со всем содержимым</dt>
+					<dd>Эти файлы реализуют стандартный скин игры, предложенный в реализации Габриэля Чирулли.</dd>
+				</dl>
+				<h2><a name="plans">Планы разработки</a></h2>
+				<ul>
+					<li>Доработать классический режим игры;</li>
+					<li>Добавить предустановленные скины, например, по сериалам «Все женщины – ведьмы», «Звёздные врата», «Ксена – принцесса-воин» и др.;</li>
+					<li>Создать справочный файл с правилами игры;</li>
+					<li>Создать удобный инсталлятор игры. Это позволит игрокам скачивать необходимые файлы не разрозненным набором, а в виде одного архива.</li>
+				</ul>
+				<h2><a name="license">Лицензирование</a></h2>
+				<p>Игра «2048 для Windows» выпускается под лицензией <a href="http://www.gnu.org/licenses/gpl-3.0.ru.html">GNU GPL v3</a>.</p>
+			</article>
+		</main>
+		<footer class="page-footer">
+			<div class="social-block">
+				<a href="http://vk.com/id21154054"><img src="/img/vkontakte.png" alt="[В]Контакте" title="Я [В]Контакте" /></a>
+				<a href="http://youtube.com/channel/UCdcwan4zeMoif_K0kEV-4mw"><img src="/img/youtube.png" alt="YouTube" title="Мой канал на YouTube" /></a>
+				<a href="https://github.com/megadragon"><img src="/img/github.png" alt="GitHub" title="Моя страница на GitHub" /></a>
+				<a href="skype:megadragon16"><img src="/img/skype.png" alt="Skype" title="Мой Skype-номер" /></a>
+			</div>
+			<p class="copyright">&copy; Megadragon, 2016. Все права защищены</p>
+			<p class="nickname-sertified">
+				<a href="http://nick-name.ru/nickname/megadragon/">
+					<img src="http://nick-name.ru/img.php?nick=Megadragon&sert=2" alt="Никнейм Megadragon зарегистрирован!" border="0" />
+				</a>
+			</p>
+		</footer>
+	</body>
+</html>
