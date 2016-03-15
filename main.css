@@ -5,6 +5,10 @@ body {
 	margin: 0 auto;
 }
 
+.logo {
+	margin: 0;
+}
+
 .page-header, .page-footer {
 	background-color: #555555;
 }
@@ -45,4 +49,5 @@ body {
 
 .sidebar {
 	float: right;
+	min-height: 300px;
 }
